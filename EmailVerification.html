@@ -3,83 +3,96 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
-    <link rel="stylesheet" href="./EmailVerification.css" />
+    <link rel="stylesheet" href="./PasswordReset1.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;600;700;800&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source Sans Pro:wght@400;700&display=swap"
     />
   </head>
   <title>Events</title>
   <style type="text/css">
-    .union-icon4 {
+    .union-icon3 {
       position: absolute;
-      top: 43px;
-      left: 56px;
-      width: 52.9px;
-      height: 56px;
+      top: 32px;
+      left: 0;
+      width: 163px;
+      height: 38px;
+    }
+    .email-template-item {
+      position: absolute;
+      top: 793px;
+      left: -4px;
+      background-color: #c6c6c8;
+      width: 698px;
+      height: 1px;
+      overflow: hidden;
+      display: none;
     }
     .email-verification-code {
       position: relative;
       letter-spacing: 0.37px;
       line-height: 41px;
-    }
-    .use-the-below {
-      margin: 0;
-      font-weight: 400;
-    }
-    .hello-there-use-container {
       display: inline-block;
-      width: 406px;
-      font-weight: 700;
+      width: 698px;
     }
-    .hello-there-use-container,
-    .verification-code {
-      position: relative;
+    .hello-there1 {
       letter-spacing: -0.41px;
       line-height: 22px;
-      color: #000;
     }
-    .verification-code {
-      font-weight: 400;
+    .hello-there {
+      margin: 0;
     }
-    .div {
-      position: relative;
+    .b {
+      letter-spacing: 0.37px;
+      line-height: 56px;
+    }
+    .p1 {
+      margin: 0;
       font-size: 48px;
-      font-weight: 800;
-      color: #000;
-      margin-top: 20px;
+    }
+    .code-expires-in,
+    .hello-there-use-container {
+      position: relative;
+      display: inline-block;
+      width: 698px;
+    }
+    .code-expires-in {
+      letter-spacing: -0.41px;
+      line-height: 22px;
     }
     .email-verification-code-parent,
-    .hello-there-use-the-below-cod-parent,
-    .verification-code-parent {
+    .hello-there-use-the-below-cod-parent {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-start;
     }
     .hello-there-use-the-below-cod-parent {
-      gap: 40px;
+      gap: 14px;
       font-size: 17px;
-      color: rgba(235, 235, 245, 0.6);
     }
     .email-verification-code-parent {
       position: absolute;
-      top: 156px;
-      left: 56px;
-      gap: 31px;
+      top: 150px;
+      left: 0;
+      gap: 29px;
     }
-    .email-verification {
-      position: relative;
-      border-radius: 40px;
+    .email-template1 {
+      position: absolute;
+      top: 60px;
       background-color: #fff;
       width: 100%;
-      max-width: 736px;
+      height: 533px;
+    }
+    .password-reset1 {
+      position: relative;
+      border-radius: 16px;
+      background-color: #fff;
+      width: 100%;
+      max-width: 598px;
+      padding: 50px;
       margin: auto;
-      height: 532px;
+      height: 860px;
       overflow: hidden;
       text-align: left;
       font-size: 34px;
@@ -88,41 +101,57 @@
     }
 
     @media screen and (max-width: 700px) {
-      .hello-there-use-container {
-        width: 300px;
+      .email-template1 {
+        top: 50px;
       }
     }
 
-    @media screen and (max-width: 450px) {
-      .hello-there-use-container {
-        width: 200px;
-      }
-      .union-icon4 {
-        left: 30px;
-      }
-      .email-verification-code-parent {
-        left: 30px;
-        top: 130px;
+    @media screen and (max-width: 428px) {
+      .email-verification-code {
+        width: 300px;
       }
     }
   </style>
   <body>
-    <div class="email-verification">
-      <img class="union-icon4" alt="" src="./public/union.svg" />
+    <div class="password-reset1">
+      <div class="email-template1">
+        <img class="union-icon3" alt="" src="./public/union.svg" />
 
-      <div class="email-verification-code-parent">
-        <b class="email-verification-code">Email verification code</b>
-        <div class="hello-there-use-the-below-cod-parent">
-          <div class="hello-there-use-container">
-            <p class="use-the-below">Hello there,</p>
-            <p class="use-the-below">Use the below code to verify your email</p>
-          </div>
-          <div class="verification-code-parent">
-            <div class="verification-code">Verification code</div>
-            <div class="div">1085475</div>
-          </div>
-          <div class="hello-there-use-container">
-            Code expires in 10 minutes
+        <div class="email-template-item"></div>
+        <div class="email-verification-code-parent">
+          <b class="email-verification-code">Email verification code</b>
+          <div class="hello-there-use-the-below-cod-parent">
+            <div class="hello-there-use-container">
+              <p class="hello-there">
+                <span class="hello-there1">
+                  <span>Hello there, </span>
+                </span>
+              </p>
+              <p class="hello-there">
+                <span class="hello-there1">
+                  <span>Use the below code to verify your email</span>
+                </span>
+              </p>
+              <p class="hello-there">
+                <span class="hello-there1">
+                  <span>&nbsp;</span>
+                </span>
+              </p>
+              <p class="hello-there">
+                <span class="hello-there1">
+                  <span>Verification code</span>
+                </span>
+              </p>
+              <p class="hello-there">
+                <span class="hello-there1">
+                  <b>&nbsp;</b>
+                </span>
+              </p>
+              <p class="p1">
+                <b class="b">1085475</b>
+              </p>
+            </div>
+            <b class="code-expires-in">Code expires in 10 minutes</b>
           </div>
         </div>
       </div>
