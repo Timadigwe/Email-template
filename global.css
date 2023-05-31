@@ -1,9 +1,5 @@
 body {
   margin: 0;
   line-height: normal;
-  font-family: "ArialCustom", Arial, sans-serif;
-}
-@font-face {
-  font-family: "ArialCustom";
-  src: url("./public/arial-cufonfonts/ARIAL.TTF");
+  font-family: "Inter", sans-serif;
 }
